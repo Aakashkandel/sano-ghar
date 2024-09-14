@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Shop Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Container -->
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <header class="mb-12 text-center">
+            <h1 class="text-5xl font-bold text-gray-800">Shop Our Products</h1>
+            <p class="mt-4 text-xl text-gray-600">Find the best products to fit your needs</p>
+        </header>
+
+        <!-- Search Bar and Category Filter -->
+        <form class="flex flex-col md:flex-row justify-between mb-10 items-center space-y-4 md:space-y-0">
+            <!-- Search Bar -->
+            <input type="text" name="search" placeholder="Search products..."
+                class="w-full md:w-1/2 p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" />
+
+            <!-- Category Select -->
+            <select name="category"
+                class="w-full md:w-1/4 p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500">
+                <option value="">All Categories</option>
+                <option value="1">Category 1</option>
+                <option value="2">Category 2</option>
+                <option value="3">Category 3</option>
+            </select>
+
+            <!-- Search Button -->
+            <button type="submit"
+                class="ml-0 md:ml-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg w-full md:w-auto">
+                Search
+            </button>
+        </form>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x300.png?text=Product+1" alt="Product 1"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg font-bold text-gray-800">Product 1</h2>
+                    <p class="text-gray-600">Category 1</p>
+                    <p class="text-xl font-bold text-gray-900 mt-4">$100</p>
+                    <a href="add_to_cart.php?id=1"
+                        class="block mt-6 bg-green-600 hover:bg-green-700 text-white text-center font-bold py-2 rounded-lg">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x300.png?text=Product+2" alt="Product 2"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg font-bold text-gray-800">Product 2</h2>
+                    <p class="text-gray-600">Category 2</p>
+                    <p class="text-xl font-bold text-gray-900 mt-4">$200</p>
+                    <a href="add_to_cart.php?id=2"
+                        class="block mt-6 bg-green-600 hover:bg-green-700 text-white text-center font-bold py-2 rounded-lg">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x300.png?text=Product+3" alt="Product 3"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg font-bold text-gray-800">Product 3</h2>
+                    <p class="text-gray-600">Category 3</p>
+                    <p class="text-xl font-bold text-gray-900 mt-4">$300</p>
+                    <a href="add_to_cart.php?id=3"
+                        class="block mt-6 bg-green-600 hover:bg-green-700 text-white text-center font-bold py-2 rounded-lg">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x300.png?text=Product+4" alt="Product 4"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-lg font-bold text-gray-800">Product 4</h2>
+                    <p class="text-gray-600">Category 4</p>
+                    <p class="text-xl font-bold text-gray-900 mt-4">$400</p>
+                    <a href="add_to_cart.php?id=4"
+                        class="block mt-6 bg-green-600 hover:bg-green-700 text-white text-center font-bold py-2 rounded-lg">
+                        Add to Cart
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Cart -->
+        <div class="mt-16 text-center">
+            <a href="cart.php" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg">
+                View Cart
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
